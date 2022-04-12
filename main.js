@@ -9,10 +9,11 @@ let color = (() => {
   normal: "black";
 })();
 
-let typography = (() => {
+function setupTypography() {
   let base = 24;
   let ratio = Math.sqrt(2.0);
-  return {
+
+  let typography = {
     size: {
       XS: base / ratio / ratio + "px",
       S: base / ratio + "px",
@@ -26,7 +27,14 @@ let typography = (() => {
       smallCaps: "Alegreya SC",
     },
   };
-})();
+
+  let html = document.getElementsByTagName("HTML")[0];
+  html.style.fontSize = typography.size.M;
+  return typography;
+}
+
+let typography = setupTypography()
+
 
 let Space = " ";
 
@@ -58,15 +66,25 @@ class Icon {
   }
 }
 
+const URL_ROOT = "https://eul.ink/"
+
 class Link {
   view(vnode) {
     let attrs = vnode.attrs;
     let style = attrs.style || {};
     style.color = "inherit";
     style.textDecoration = "inherit";
-    return m("a", { href: vnode.attrs.href, style }, vnode.children);
+    let href = vnode.attrs.href;
+    if (!href.startsWith("http")) {
+      href = URL_ROOT + href
+    }
+    return m("a", { href, style }, vnode.children);
   }
 }
+
+// TODO: split who & institution. Make mail/contact obvious. Distance
+// Icon from text a bit more. Add small black block to Eul.Ink title.
+// (see https://codepen.io/hrahimi270/pen/yLOeWxm)
 
 class Hero {
   view() {
@@ -75,6 +93,7 @@ class Hero {
       {
         style: {
           padding: "1.5em",
+          backgroundColor: "#f1f3f5",
           boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
         },
       },
@@ -133,8 +152,7 @@ class Card {
       {
         style: {
           boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px",
-          minWidth: "10em",
-          minHeight: "10em",
+          padding: "1.5rem",
         },
       },
       [vnode.children]
@@ -142,7 +160,7 @@ class Card {
   }
 }
 
-class Gallery {
+class List {
   view(vnode) {
     let style = {
       display: "flex",
@@ -154,16 +172,47 @@ class Gallery {
   }
 }
 
+class Gallery {
+  view(vnode) {
+    let style = {
+      // maxWidth: "32em",
+      margin: "auto",
+      display: "flex",
+      flexWrap: "wrap",
+      gap: "1.5em",
+      padding: "1.5rem",
+    };
+    return m("main", { style }, vnode.children);
+  }
+}
+
+// TODO: update Pandoc, add Control Engineering, add flags (research, language, 
+// topic, etc.). Add CV and or education experience.
+// Clean up Python section (remove), make it a flag.
+
 m.mount(document.body, {
   view: () => [
     m(Hero),
     m(Gallery, [
-      m(Card, ["tagada"]),
-      m(Card, ["tsoin tsoin"]),
-      m(Card, ["tsoin tsoin"]),
-      m(Card, ["tagada"]),
-      m(Card, ["tsoin tsoin"]),
-      m(Card, ["tsoin tsoin"]),
+      m(Card, m(Link, {href: "https://github.com/boisgera/CDIS#calcul-diff%C3%A9rentiel-int%C3%A9gral-et-stochastique"}, "Calcul Différentiel, Intégral et Stochastique 🇫🇷")),
+      m(Card, m(Link, {href: "complex-analysis"}, "Complex Analysis")),
+      m(Card, m(Link, {href: "delay-systems"}, "Delay Systems")),
+      m(Card, m(Link, {href: "audio"}, "Digital Audio")),
+      m(Card, m(Link, {href: "python"}, "Python")),
+      m(Card, m(Link, {href: "open-source"}, "Open Source")),
+      m(Card, m(Link, {href: "delay-systems"}, "Delay Systems")),
+      m(Card, m(Link, {href: "shape-optimization"}, "Shape Optimization")),
+      m(Card, m(Link, {href: "robotics"}, "Robotics")),
+      m(Card, m(Link, {href: "software-engineering"}, "Software Engineering")),
+      m(Card, m(Link, {href: "ICTE"}, "ICT in Education")),
+
+
+      
+      
+
+
+
+
     ]),
   ],
 });
