@@ -6,15 +6,17 @@ author:
 ---
 
 
-  - [**Differential, Integral & Stochastic Calculus 🇫🇷**](https://github.com/boisgera/CDIS#calcul-diff%C3%A9rentiel-int%C3%A9gral-et-stochastique)
+  - [**Differential, Integral & Stochastic Calculus** 🇫🇷 <i class="fa fa-github"></i>](https://github.com/boisgera/CDIS#calcul-diff%C3%A9rentiel-int%C3%A9gral-et-stochastique)
 
   - [**Data Science**](data-science)
+
+  - [**Control Engineering with Python** 🐍 <i class="fa fa-github"></i>](https://github.com/boisgera/control-engineering-with-python)
+
+  - [**Software Engineering**](software-engineering)
 
   - [**Complex Analysis**](complex-analysis)
 
   - [**Delay Systems**](delay-systems)
-
-  - [**Software Engineering**](software-engineering)
 
   - [**Digital Audio**](audio)
 
