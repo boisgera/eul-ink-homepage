@@ -6,11 +6,11 @@ author:
 ---
 
 
-  - [**Differential, Integral & Stochastic Calculus** 🇫🇷 <i class="fa fa-github"></i>](https://github.com/boisgera/CDIS#calcul-diff%C3%A9rentiel-int%C3%A9gral-et-stochastique)
+  - [**Calculus** 🇫🇷 <i class="fa fa-github"></i>](https://github.com/boisgera/CDIS#calcul-diff%C3%A9rentiel-int%C3%A9gral-et-stochastique)
 
   - [**Data Science**](data-science)
 
-  - [**Control Engineering with Python** 🐍 <i class="fa fa-github"></i>](https://github.com/boisgera/control-engineering-with-python)
+  - [**Control Engineering** 🐍 <i class="fa fa-github"></i>](https://github.com/boisgera/control-engineering-with-python)
 
   - [**Software Engineering**](software-engineering)
 
