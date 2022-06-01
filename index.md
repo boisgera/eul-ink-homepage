@@ -1,15 +1,20 @@
 ---
 title: Eul.Ink
-author:  
--  "[Sébastien Boisgérault](mailto:Sebastien.Boisgerault@mines-paristech.fr),
-   Mines ParisTech"
+author:
+-  "[Sébastien Boisgérault](mailto:Sebastien.Boisgerault@minesparis.psl.eu),
+   Mines Paris, PSL University"
 ---
 
-  - [**Differential, Integral & Stochastic Calculus (french)**](https://github.com/boisgera/CDIS#calcul-diff%C3%A9rentiel-int%C3%A9gral-et-stochastique)
+
+  - [**Differential, Integral & Stochastic Calculus 🇫🇷**](https://github.com/boisgera/CDIS#calcul-diff%C3%A9rentiel-int%C3%A9gral-et-stochastique)
+
+  - [**Data Science**](data-science)
 
   - [**Complex Analysis**](complex-analysis)
 
   - [**Delay Systems**](delay-systems)
+
+  - [**Software Engineering**](software-engineering)
 
   - [**Digital Audio**](audio)
 
@@ -22,10 +27,6 @@ author:
   - [**Pandoc**](pandoc)
 
   - [**Robotics**](robotics)
-
-  - [**Software Engineering**](software-engineering)
-
-  - [**Probability**](probability)
 
   - [**ICT in Education**](ICTE)
 
