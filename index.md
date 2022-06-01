@@ -6,11 +6,14 @@ author:
 ---
 
 
-  - [**Calculus** 🇫🇷 <i class="fa fa-github"></i>](https://github.com/boisgera/CDIS#calcul-diff%C3%A9rentiel-int%C3%A9gral-et-stochastique)
+  - [**Calculus** <i class="fa fa-github"></i> 🇫🇷](https://github.com/boisgera/CDIS#calcul-diff%C3%A9rentiel-int%C3%A9gral-et-stochastique)
 
-  - [**Data Science**](data-science)
+  - [**Python** <i class="fa fa-github"></i> 🐍 🇫🇷](https://github.com/boisgera/python-fr#python-)
 
-  - [**Control Engineering** 🐍 <i class="fa fa-github"></i>](https://github.com/boisgera/control-engineering-with-python)
+  - [**Data Science** 🐤](data-science)
+
+  - [**Control Engineering** <i class="fa fa-github"></i> 🐍](https://github.com/boisgera/control-engineering-with-python#control-engineering-with-python)
+
 
   - [**Software Engineering**](software-engineering)
 
@@ -20,8 +23,9 @@ author:
 
   - [**Digital Audio**](audio)
 
+<!--
   - [**Python**](python)
-
+-->
   - [**Open Source**](open-source)
 
   - [**Shape Optimization**](shape-optimization)
