@@ -1,0 +1,11 @@
+#!/bin/bash
+
+DOC="index"
+eDOC="index"
+TARGET="/www/"
+EUL=www.eul.ink
+
+ssh boisgera@$EUL mkdir -p "$TARGET"
+scp -p ink.png $EUL:"$TARGET/ink.png"
+scp -p "$DOC".html $EUL:"$TARGET"/"$eDOC.html"
+scp -p "robots.txt" $EUL:"$TARGET"
