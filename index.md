@@ -5,6 +5,7 @@ author:
    Mines Paris, PSL University"
 ---
 
+  - [**The Go Programming Language**](https://eul.ink/go)
 
   - [**Calculus** <i class="fa fa-github"></i> 🇫🇷](https://github.com/boisgera/CDIS#calcul-diff%C3%A9rentiel-int%C3%A9gral-et-stochastique)
 
